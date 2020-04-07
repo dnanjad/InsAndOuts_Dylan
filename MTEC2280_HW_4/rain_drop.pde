@@ -3,7 +3,8 @@ class Drop {
   float y = random(-200, -100);
   float yspeed = random(4, 10);
   float len = random(10, 20);
-
+  float wave = sin(radians(frameCount));
+  
   void fall() {
     y = y + yspeed;
     

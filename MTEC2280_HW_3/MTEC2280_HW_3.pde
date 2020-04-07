@@ -15,12 +15,18 @@ float v3 = random(255);
 //rain drop array
 Drop[] drops = new Drop[500];
 
+//second drop set
+UpDrop[] updrops = new UpDrop[500];
+
 void setup() {
   size(600, 600);
   background(0);
   noFill();
   for (int i = 0; i < drops.length; i++) {
   drops[i] = new Drop();  
+  }
+  for (int i = 0; i < updrops.length; i++) {
+    updrops[i] = new UpDrop();
   }
 }
 
@@ -36,6 +42,14 @@ void draw() {
   drops[i].show();
   drops[i].fall();
   }
+  }
+  
+   //updrops
+  if (mouseY > 300) {
+    for (int i = 0; i < drops.length; i++) {
+      updrops[i].show2();
+      updrops[i].rise();
+    }
   }
   
   //shapes
