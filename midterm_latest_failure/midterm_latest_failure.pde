@@ -1,7 +1,7 @@
           // Dylan Nanjad
   
-      boolean  mainmenu = true;
-      boolean  gamestart = false;
+        mainmenu = true;
+        gamestart = false;
 
      // gameon variables
             float r = random(0, 255);
@@ -23,15 +23,6 @@
             }
           }
           
-          
-          void draw() {
-            
-            if (mainmenu==true) {
-              mainmenu();
-            } if (gamestart==true) {
-                gamestart();
-            } 
-          }
           void gamestart() {
             background(0);
             fill(r, g, b);
