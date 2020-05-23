@@ -1,5 +1,6 @@
       class pillar{
-        float xPos, opening;
+        float opening;
+        int xPos;
         boolean passed = false;
        pillar(int i){
         xPos = 100+(i*200);  //sets distance between three pillars
