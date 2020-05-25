@@ -1,4 +1,5 @@
-//Flappy Code
+//Flapless Bird
+//Instructions: Hover hand above photocell to control height. Twist the potentiometer to speed up or slow down
 
 import processing.serial.*; //import Serial Library
 Serial myPort; //create object from Serial class
@@ -30,7 +31,7 @@ void draw() {
   println(val);
   
   if (val < 130) {
-    b.yPos = map(val, 0, 14, 0, 800);
+    b.yPos = map(val, 0, 15, 0, 800);
   } else {
     pillarSpeed = map(val, 128, 255, 0, 5);
   }

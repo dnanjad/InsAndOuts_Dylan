@@ -9,18 +9,16 @@
         stroke(255);
         noFill();
         strokeWeight(2);
-    //    yPos = map(val, 0, 15, 0, 800);  //maps photoresistor values to 0-800
         ellipse(xPos, yPos, 20, 20);
       }
       
       void move(){
        for(int i = 0;i<3;i++){
-      //   p[i].pillarSpeed = map(val2, 130, 255, 0, 5);
         p[i].xPos -= pillarSpeed;
        }
       }
       void checkCollisions(){ //checks if bird goes past bottom of canvas
-       if(yPos>800){
+       if(yPos>1000){
         end=false;
        }
       for(int i = 0;i<3;i++){        //checks if bird center passes through the opening of the pillars
