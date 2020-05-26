@@ -21,7 +21,7 @@
        if(yPos>1000){
         end=false;
        }
-      for(int i = 0;i<3;i++){        //checks if bird center passes through the opening of the pillars
+      for(int i = 0; i<3; i++){        //checks if bird center passes through the opening of the pillars
       if((xPos < p[i].xPos + 10 && xPos > p[i].xPos - 10) && (yPos < p[i].opening - 100 || yPos > p[i].opening + 100)){
        end = false; 
       }
